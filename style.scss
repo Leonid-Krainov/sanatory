@@ -1,0 +1,78 @@
+header {
+    nav {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        padding-right: 3%;
+        background-color: rgba(255, 255, 255, 0.5);
+        ul.nav {
+            a {
+                color: rgb(0, 0, 0);
+                &:hover {
+                    color: rgb(255, 255, 255);
+                }
+            }
+            li.dropDown {
+                position: relative;
+                display: inline-block;
+                table {
+                    display: none;
+                    position: absolute;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    min-width: 300px;
+                    z-index: 1;
+                    tr:first-child {
+                        font-size: 17px;
+                    }
+                    td {
+                        padding: 5px 10px;
+                    }
+                    td:nth-child(3n+2) {
+                        border-left: 1px solid rgb(0, 128, 0);
+                        border-right: 1px solid rgb(0, 128, 0);
+                    }
+                    a:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .dropDown:hover .navDrop {
+                display: block;
+            }
+        }
+    }
+    div#carouselExampleIndicators {
+        div.headerText {
+            margin-top: 100px;
+            margin-left: 70px;
+            z-index: 1;
+            position: absolute;
+            color: white;
+            p {
+                font-size: 20px;
+            }
+        }
+        ol.carousel-indicators {
+            top: 190px;
+        }
+        div.orderForm {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            height: 150px;
+            z-index: 1;
+            position: absolute;
+            margin-top: -150px;
+            padding-top: 25px;
+            h5 {
+                text-align: center;
+                color: white;
+            }
+            form.form-inline {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 30px;
+            }
+        }
+    }
+}
